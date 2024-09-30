@@ -5,7 +5,7 @@ on:
 jobs:
   render:
     runs-on: ubuntu-latest
-    container: hello-world
+    container: bosschaert/sling-mini-offline:1
     steps:
       - run: |
           echo This job does specify a container.
