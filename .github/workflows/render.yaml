@@ -8,5 +8,5 @@ jobs:
     container: bosschaert/sling-mini-offline:1
     steps:
       - run: |
-          java -version && whoami && /root/launch-offline-bare.sh
+          java -version && whoami && cd /root && ./launch-offline-bare.sh
         name: Render
