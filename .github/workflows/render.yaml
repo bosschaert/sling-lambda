@@ -8,6 +8,5 @@ jobs:
     container: bosschaert/sling-mini-offline:1
     steps:
       - run: |
-          echo This job does specify a container.
-          echo It runs in the container instead of the VM.
-        name: Run in container
+          java -version && ./launch-offline-bare.sh
+        name: Render
