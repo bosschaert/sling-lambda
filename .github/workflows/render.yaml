@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: docker://bosschaert/sling-mini-offline:1
         with:
-          args: cd /root && ./launch-offline-bare.sh
+          args: ls `pwd`
 
       - run: ls /files || true
       - run: ls /src/md || true
