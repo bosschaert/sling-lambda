@@ -10,7 +10,12 @@ jobs:
       - uses: docker://bosschaert/sling-mini-offline:1
         with:
           entrypoint: /bin/bash
-          args: '-c du /'
+          args: '-c "du /"'
+
+      - uses: docker://bosschaert/sling-mini-offline:1
+        with:
+          entrypoint: /bin/bash
+          args: '-c "ls ./src/md"'
 
       - run: ls /files || true
       - run: ls /src/md || true
