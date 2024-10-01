@@ -5,8 +5,12 @@ on:
 jobs:
   render:
     runs-on: ubuntu-latest
-    container: bosschaert/sling-mini-offline:1
+    container:
+      image: bosschaert/sling-mini-offline:1
+      volumes:
+        - ${{ github.workspace }}/src/md:/tmp/docs
     steps:
+      - uses: actions/checkout@v4
       - run: |
-          java -version && whoami && cd /root && ./launch-offline-bare.sh
+          ls /tmp/docs && cd /root && ./launch-offline-bare.sh
         name: Render
