@@ -5,17 +5,16 @@ on:
 jobs:
   render:
     runs-on: ubuntu-latest
-    container:
-      image: bosschaert/sling-mini-offline:1
-      options: -v /__w/sling-lambda/sling-lambda:/files/:rw
     steps:
       - uses: actions/checkout@v4
+      - uses: docker://bosschaert/sling-mini-offline:1
+        with:
+          args: cd /root && ./launch-offline-bare.sh
+
       - run: ls /files || true
       - run: ls /src/md || true
       - run: ls /tmp/docs || true
 
-      # volumes:
-      #   - ${{ github.workspace }}/src/md:/tmp/docs
 
       # - run: |
       #     ls /tmp/docs && cd /root && ./launch-offline-bare.sh
