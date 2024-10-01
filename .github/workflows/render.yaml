@@ -7,10 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: docker://bosschaert/sling-mini-offline:1
-        with:
-          entrypoint: /bin/bash
-          args: '-c "du /"'
 
       - uses: docker://bosschaert/sling-mini-offline:1
         with:
@@ -29,3 +25,7 @@ jobs:
       # - run: ls ${{ github.workspace }}/src/md
       # - run: ls /
       # - run: ls /tmp/docs
+      # - uses: docker://bosschaert/sling-mini-offline:1
+      # with:
+      #   entrypoint: /bin/bash
+      #   args: '-c "du /"'
