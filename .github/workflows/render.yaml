@@ -11,6 +11,10 @@ jobs:
         - ${{ github.workspace }}/src/md:/tmp/docs
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          ls /tmp/docs && cd /root && ./launch-offline-bare.sh
-        name: Render
+      # - run: |
+      #     ls /tmp/docs && cd /root && ./launch-offline-bare.sh
+      # name: Render
+      - run: ls ${{ github.workspace }}
+      - run: ls ${{ github.workspace }}/src/md
+      - run: ls /
+      - run: ls /tmp/docs
