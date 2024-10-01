@@ -12,6 +12,9 @@ jobs:
         env:
           SOURCE_DIR: /src/md
           TARGET_DIR: /github/home
+        with:
+          entrypoint: /bin/bash
+          args: '-c "cd /root && ./launch-offline-bare.sh"'
 
       - run: ls /home/runner/work/sling-lambda/sling-lambda || true
 
