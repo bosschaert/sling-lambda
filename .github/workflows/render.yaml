@@ -11,11 +11,9 @@ jobs:
       - uses: docker://bosschaert/sling-mini-offline:1
         with:
           entrypoint: /bin/bash
-          args: '-c "ls ./src/md"'
+          args: '-c "ls ./src/md && echo foo > /github/workspace/foo.txt"'
 
-      - run: ls /files || true
-      - run: ls /src/md || true
-      - run: ls /tmp/docs || true
+      - run: ls /home/runner/work/sling-lambda/sling-lambda || true
 
 
       # - run: |
