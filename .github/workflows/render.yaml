@@ -1,7 +1,8 @@
 name: Render Page
 on:
   workflow_dispatch:
-
+permissions:
+  contents: write
 jobs:
   render:
     runs-on: ubuntu-latest
