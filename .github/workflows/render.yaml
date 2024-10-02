@@ -8,6 +8,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Clear old docs
+        run: rm "${{ github.workspace }}/docs/*" || true
+
       - uses: docker://bosschaert/sling-mini-offline:5
         env:
           SOURCE_DIR: ${{ github.workspace }}/src/md
