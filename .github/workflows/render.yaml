@@ -8,10 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: docker://bosschaert/sling-mini-offline:3
+      - uses: docker://bosschaert/sling-mini-offline:4
         env:
-          SOURCE_DIR: ./src/md
-          TARGET_DIR: ./docs
+          SOURCE_DIR: ${{ github.workspace }}/src/md
+          TARGET_DIR: ${{ github.workspace }}/docs
         with:
           entrypoint: /bin/bash
           args: '-c "cd /root && ./launch-offline-bare.sh"'
