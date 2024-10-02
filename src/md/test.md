@@ -1,4 +1,4 @@
-# My modified Heading
+# My Modified Heading
 
 Blah blah some text
 

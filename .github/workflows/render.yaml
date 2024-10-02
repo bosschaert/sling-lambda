@@ -1,11 +1,10 @@
 name: Render Pages
 on: push
-permissions:
-  contents: write
 jobs:
   render:
     runs-on: ubuntu-latest
     permissions:
+      contents: write
       pages: write
       id-token: write
     steps:
