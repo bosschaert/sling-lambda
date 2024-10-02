@@ -8,15 +8,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: docker://bosschaert/sling-mini-offline:2
+      - uses: docker://bosschaert/sling-mini-offline:3
         env:
-          SOURCE_DIR: /src/md
-          TARGET_DIR: /github/home
+          SOURCE_DIR: ./src/md
+          TARGET_DIR: ./docs
         with:
           entrypoint: /bin/bash
           args: '-c "cd /root && ./launch-offline-bare.sh"'
 
-      - run: ls /home/runner/work/sling-lambda/sling-lambda || true
+      - run: ls /home/runner/work/sling-lambda/sling-lambda/docs || true
 
 
       # - run: |
