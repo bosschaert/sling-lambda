@@ -24,4 +24,4 @@ jobs:
           git config --global user.email 'david.bosschaert@gmail.com'
           git add docs
           git commit -m "Rendered pages in run $GITHUB_RUN_ID"
-          git push
+          git push || true
