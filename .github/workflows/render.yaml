@@ -29,9 +29,14 @@ jobs:
           git commit -m "Rendered pages in run $GITHUB_RUN_ID" || true
           git push || true
 
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ github.workspace }}/docs
+
+      - uses: actions/deploy-pages@v4
+
       - name: Publish to Helix
         run: |
-          sleep 5 # Wait for the pushed files to be available
           UPDATED_FILES=$(git diff-tree --no-commit-id --name-only `git rev-parse HEAD` -r)
           for FPATH in ${UPDATED_FILES}; do
               echo Changed file: "$FPATH"
