@@ -14,11 +14,4 @@ Some details here. Going into more detail...
 
 ### A Second Level 3 heading
 
-La la la  
-One two three  
-Alpha Beta Gamme Delta  
-A B C D  
-1 2 3 4
-Hello there
-More mods
-
+Humpty dumpty
