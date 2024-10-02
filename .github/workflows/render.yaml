@@ -8,11 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - run: ls /home/runner/work/sling-lambda/sling-lambda/docs || true
-      - run: ls ${{ github.workspace }}/docs || true
-      - run: ls $GITHUB_WORKSPACE/docs || true
       - name: Clear old docs
-        run: rm ${{ github.workspace }}/docs/* || true
+        run: ls $GITHUB_WORKSPACE/docs && rm $GITHUB_WORKSPACE/docs/* || true
 
       - uses: docker://bosschaert/sling-mini-offline:5
         env:
@@ -33,6 +30,8 @@ jobs:
           git push || true
 
       - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ github.workspace }}/docs
 
       - uses: actions/upload-artifact@v4
 
