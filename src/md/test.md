@@ -7,3 +7,7 @@ Adding another para, making it a bit longer! And a bit more...
 ## A subheading
 
 More text...
+
+### Level 3 heading
+
+Some details here

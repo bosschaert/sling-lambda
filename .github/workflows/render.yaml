@@ -46,13 +46,12 @@ jobs:
                   FNAME="${FPATH##docs/}"
                   # Remove file extension
                   FBASE="${FNAME%%.*}"
-                  echo Found updated content file: $FBASE
+                  echo Previewing and publishing content file: $FBASE
 
+                  # Preview to Helix
+                  curl -X POST https://admin.hlx.page/preview/bosschaert/sling-lambda-site/main/$FBASE
                   # Publish to Helix
-                  curl -v -X POST https://admin.hlx.page/preview/bosschaert/sling-lambda-site/main/$FBASE
+                  curl -X POST https://admin.hlx.page/live/bosschaert/sling-lambda-site/main/$FBASE
               fi
           done
-
-      #     curl -v -X POST https://admin.hlx.page/preview/bosschaert/sling-lambda-site/main/test
-
 
