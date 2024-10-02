@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: docker://bosschaert/sling-mini-offline:4
+      - uses: docker://bosschaert/sling-mini-offline:5
         env:
           SOURCE_DIR: ${{ github.workspace }}/src/md
           TARGET_DIR: ${{ github.workspace }}/docs
