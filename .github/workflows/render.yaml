@@ -1,6 +1,5 @@
 name: Render Page
-on:
-  workflow_dispatch:
+on: push
 permissions:
   contents: write
 jobs:
@@ -26,20 +25,3 @@ jobs:
           git add docs
           git commit -m "Rendered pages in run $GITHUB_RUN_ID"
           git push
-
-
-      # - run: |
-      #     ls /tmp/docs && cd /root && ./launch-offline-bare.sh
-      # name: Render
-      # - run: ls ${{ github.workspace }}
-      # - run: ls ${{ github.workspace }}/src/md
-      # - run: ls /
-      # - run: ls /tmp/docs
-      # - uses: docker://bosschaert/sling-mini-offline:1
-      # with:
-      #   entrypoint: /bin/bash
-      #   args: '-c "du /"'
-
-      # with:
-      #   entrypoint: /bin/bash
-      # args: '-c "ls ./src/md && echo foo > /github/workspace/foo.txt && env | sort"'
