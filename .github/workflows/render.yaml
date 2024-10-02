@@ -37,4 +37,21 @@ jobs:
 
       - uses: actions/deploy-pages@v4
 
+      - name: Publish to Helix
+        run: |
+          UPDATED_FILES=$(git diff-tree --no-commit-id --name-only `git rev-parse HEAD` -r)
+          for FPATH in ${UPDATED_FILES}; do
+              echo File: "$FPATH"
+              if [[ $FPATH == *.md.html ]]
+              then
+                  # Remove docs/prefix
+                  FNAME="${FPATH##docs/}"
+                  # Remove file extension
+                  FBASE="${FNAME%%.*}"
+                  echo Found file: $FBASE
+              fi
+          done
+
+      #     curl -v -X POST https://admin.hlx.page/preview/bosschaert/sling-lambda-site/main/test
+
 
