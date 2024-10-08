@@ -4,5 +4,5 @@ Last modified by Carsten Ziegeler on 2024-09-05
 
 Apache Sling, Sling, Apache, the Apache feather logo, and the Apache Sling project logo are trademarks of The Apache Software Foundation. All other marks mentioned may be trademarks or registered trademarks of their respective owners.
 
-Copyright © 2007-2024[ The Apache Software Foundation](https://www.apache.org/)|[ Privacy Policy](https://privacy.apache.org/policies/privacy-policy-public.html)
+Copyright © 2007-2025[ The Apache Software Foundation](https://www.apache.org/)|[ Privacy Policy](https://privacy.apache.org/policies/privacy-policy-public.html)
 
