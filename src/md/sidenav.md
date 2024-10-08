@@ -30,8 +30,7 @@
 - **Source**
   - [Repositories](https://sling.apache.org/repolist.html)
   - [Git at Apache](https://gitbox.apache.org/repos/asf?s=sling)
-- **Apache Software**\
-  **Foundation**
+- **Apache Software Foundation**
   - [Thanks!](https://www.apache.org/foundation/thanks.html)
   - [Become a Sponsor](https://www.apache.org/foundation/sponsorship.html)
   - [Buy Stuff](https://www.apache.org/foundation/buy_stuff.html)
