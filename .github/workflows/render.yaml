@@ -42,7 +42,7 @@ jobs:
               echo Changed file: "$FPATH"
               if [[ $FPATH == *.md.html ]]
               then
-                  # Remove docs/prefix
+                  # Remove docs/ prefix
                   FNAME="${FPATH##docs/}"
                   # Remove file extension
                   FBASE="${FNAME%%.*}"
