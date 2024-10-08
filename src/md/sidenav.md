@@ -39,11 +39,6 @@
 - ![Support the Apache Software Foundation!][image1]\
   <https://apache.org/foundation/contributing.html>
 
-+-------------------+
-| Section Metadata  |
-+=========+=========+
-| Style   | sidenav |
-+---------+---------+
 
 [image0]: https://main--testkarlslingreleases--aemdemos.hlx.page/media_15e0f8b5c0408bc8961793459d5d56afa23681ddc.png#width=522&height=521
 
