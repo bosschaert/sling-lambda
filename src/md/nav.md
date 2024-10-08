@@ -1,14 +1,10 @@
-![Apache Sling][image0]\
-<https://sling.apache.org/>
+![Apache Sling][image0]
 
 ---
 
 ---
 
-![Apache][image1]\
-<https://www.apache.org/>
-
-Search Clear
+![Apache][image1]
 
 [image0]: https://main--testkarlslingreleases--aemdemos.hlx.page/media_1730dde7db06450c836710b49c0a7a69eef91366a.png#width=768&height=392
 
