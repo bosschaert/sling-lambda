@@ -1,13 +1,3 @@
-+--------------------------------x---------------------------------+
-| Fragment                                                         |
-+--------------------------------x---------------------------------+
-| <https://main--testkarlslingreleases--aemdemos.hlx.live/sidenav> |
-+------------------------------------------------------------------+
-
----
-
-- [Home](https://sling.apache.org/)
-
 [news](https://sling.apache.org/tags/news.html)
 
 # Releases
