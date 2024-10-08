@@ -2460,12 +2460,3 @@ This is a list of all our releases, available from our [downloads](https://sling
 - JCR API 2.0.4 (17th)
 - Commons LogService 2.0.6 (5th)
 
-\- ( Releases )
-
-+----------------------------------+
-| Metadata                         |
-+=======+==========================+
-| Title | Apache Sling :: Releases |
-+-------+--------------------------+
-
--
