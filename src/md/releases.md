@@ -4,6 +4,10 @@
 
 This is a list of all our releases, available from our [downloads](https://sling.apache.org/downloads.cgi) page.
 
+## October 2024
+
+- AdaptTo Release
+
 ## [September 2024](https://sling.apache.org/releases.html)
 
 - Scripting Core 2.4.10 (5th)
